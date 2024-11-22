@@ -23,3 +23,9 @@ const myObj  = {
 const functionality = function name(params) {
     console.log("Hello World")
 }
+
+
+///Memory Allottment
+// Heap and Stack Memory
+// Heap (Non Primitive Data Types) - Changes are mafe in the original memory slot
+//Stack Memory (Primitive Data Types) - Changes are made in the reference memory slot 
