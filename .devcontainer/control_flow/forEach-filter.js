@@ -71,6 +71,7 @@ const newNums = myNums.filter( (num) => num >4 );
 
 // syntax for filter maps - arr_name.filter(() => condition)
 // filter method also uses callback functions
+// filter returns only true values
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
