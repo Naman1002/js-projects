@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Project 1</h1>
+    <button id = "change">Click Me</button>
+    <script>
+        // Function 1
+        const sayName = function(){
+            console.log("Name Changed")
+        }
+        const changeText = () => {
+            document.querySelector("h1").innerHTML = "Title Changed"
+        }
+        const timeOut = setTimeout(changeText,2000) 
+        // arg 1 - the name of the
+        //  function to be executed
+        // arg 2 - the time after which the 
+        // function has to be delayed
+
+        //  clearTimeout(timeOut) 
+        // clears out the setTimeout or more like 
+        // disables the setTimeout
+
+        // the above approach is not a good one at all 
+        // because it requires you to declare clearTimeout 
+        // function separately instead what we would like
+        // to do is to wrap clearTimeout  in an eventlistener 
+        // so that we stop the name from changing 
+
+        document.querySelector("#change")
+        addEventListener("click",() =>{
+            clearTimeout(timeOut)
+            console.log("Stopped")
+        })
+
+
+    </script>
+</body>
+</html>
